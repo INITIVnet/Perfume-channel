@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+:root {
+  /* COLORS */
+
+  --DARK-CYAN: hsl(158, 36%, 37%);
+  --CREAM: hsl(30, 38%, 92%);
+  --VERY-DARK-BLUE: hsl(212, 21%, 14%);
+  --DARK-GRAYISH-BLUE: hsl(228, 12%, 48%);
+  --WHITE: hsl(0, 0%, 100%);
+
+  /* FONTS */
+
+  --FRAUNCES: "Fraunces", serif;
+  --MONTSERRAT: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--CREAM);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  height: 430px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.container-1 {
+  flex: 1;
+  border-radius: 10px;
+  border-radius: 3px solid;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.channel {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.container-2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 35px 30px;
+  background-color: var(--WHITE);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+h1 {
+  font-size: 12px;
+  color: var(--DARK-GRAYISH-BLUE);
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: var(--MONTSERRAT);
+}
+
+h2 {
+  font-family: var(--FRAUNCES);
+  width: 200px;
+  font-size: 30px;
+  margin-top: 0px;
+  line-height: 32px;
+  color: var(--VERY-DARK-BLUE);
+}
+
+p {
+  width: 220px;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--DARK-GRAYISH-BLUE);
+  margin-top: 0px;
+  font-family: var(--MONTSERRAT);
+}
+
+.price {
+  font-size: 30px;
+  margin-top: 20px;
+  color: var(--DARK-CYAN);
+  font-family: var(--FRAUNCES);
+  font-weight: bold;
+}
+
+span {
+  font-size: 12px;
+  color: var(--DARK-GRAYISH-BLUE);
+  font-weight: lighter;
+  font-family: var(--MONTSERRAT);
+  position: relative;
+  top: -6px;
+  margin-left: 15px;
+}
+
+button {
+  border: 0px;
+  background-color: var(--DARK-CYAN);
+  color: var(--WHITE);
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--MONTSERRAT);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: hsl(156, 42%, 18%);
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    flex-direction: column;
+  }
+
+  .container-1 {
+    padding: 115px 100px;
+    position: relative;
+  }
+
+  .container-1 img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  h2 {
+    width: 300px;
+    scale: 0.5rem;
+  }
+
+  p {
+    width: 270px;
+  }
+}
